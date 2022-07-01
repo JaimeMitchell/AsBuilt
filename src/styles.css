@@ -1,0 +1,129 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.floorplan {
+  grid-template-columns: repeat(auto-fit, minmax(1fr));
+  display: grid;
+  grid-auto-flow: dense;
+  padding: 20px;
+  grid-gap: 20px;
+  grid-template-areas:
+    "bed bed bed bed bed bed bed bed bed"
+    "bed bed bed bed bed bed bed bed bed"
+    "bed bed bed bed bed bed bed bed bed"
+    "bed bed bed bed bed bed bed bed bed"
+    "bed bed bed bed bed bed bed bed bed"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen"
+    "bath bath living living living living living living living"
+    "bath bath living living living living living living living"
+    "bath bath living living living living living living living"
+    "bath bath living living living living living living living"
+    "bath bath living living living living living living living";
+
+  /* grid-template-areas:
+  'bed bed living living kitchen'
+  'bed bed living living kitchen'
+  'bath bath living living kitchen'
+  'bed bed bath bed bed'
+  'bed bed bath bed bed'
+  ; */
+  /* grid-template-areas:
+  'bed bed bed bed living living living living kitchen kitchen'
+  'bed bed bed bed living living living living kitchen kitchen'
+  'bed bed bed bed living living living living kitchen kitchen'
+  'bath bath bath bath bath bath living living kitchen kitchen'
+  'bath bath bath bath bath bath living living bed bed'
+  'bath bath bath bath bath bath living living bed bed'
+  ; */
+  text-align: center;
+  border: 1px solid grey;
+  background-color: linen;
+}
+
+.kitchen {
+  grid-area: kitchen;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
+  flex-direction: grid-area;
+  padding: 5px;
+  background-color: rgb(168, 248, 143);
+}
+
+.bedroom {
+  grid-area: bed;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
+  flex-direction: grid-area;
+  padding: 5px;
+  background-color: mediumpurple;
+}
+
+.livingroom {
+  grid-area: living;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
+  flex-direction: grid-area;
+  padding: 5px;
+  background-color: mediumturquoise;
+}
+
+.bath {
+  grid-area: bath;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: grid-area;
+  margin: 5px;
+  padding: 5px;
+  background-color: hotpink;
+}
+
+.oven {
+  width: 25%;
+  height: 25%;
+  border: 1px solid grey;
+  display: grid;
+  text-align: center;
+  /* justify-content: center; */
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(250, 144, 83);
+}
+
+.sink {
+  grid-area: sink;
+  width: 25%;
+  height: 25%;
+  border: 1px solid grey;
+  display: grid;
+  text-align: center;
+  /* justify-content: center; */
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(28, 185, 212);
+}
